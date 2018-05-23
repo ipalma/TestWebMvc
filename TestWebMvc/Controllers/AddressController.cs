@@ -11,7 +11,6 @@ namespace TestWebMvc.Controllers
 {
     public class AddressController : BaseController
     {
-        private string _controller = "Address";
         private readonly IService<Address> _addressService;
         public AddressController(IService<Address> addressService)
         {

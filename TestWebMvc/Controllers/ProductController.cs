@@ -32,7 +32,7 @@ namespace TestWebMvc.Controllers
         public ActionResult ProductDetails(int id)
         {
             ProductModelProductDescription prodModProdDes = new ProductModelProductDescription();
-            prodModProdDes = _prodModProdDesService.Get("ProductModelProductDescription", "GetProductModelProductDescription", id);
+            prodModProdDes = _prodModProdDesService.Get("ProductModelProductDescription", "GetProductModelProductDescriptionByProductModelID", id);
             return View(prodModProdDes);
         }
     }
