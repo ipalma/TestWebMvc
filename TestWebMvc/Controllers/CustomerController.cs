@@ -11,12 +11,10 @@ namespace TestWebMvc.Controllers
     public class CustomerController : BaseController
     {
         private readonly IService<Customer> _customerService;
-        private string _controller = string.Empty;
 
         public CustomerController(IService<Customer> customerService)
         {
             _customerService = customerService;
-            _controller = ControllerContext.RouteData.Values["controller"].ToString();
         }
         // GET: Customer
         public ActionResult Index()
